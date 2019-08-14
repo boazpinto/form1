@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+<h1>Register</h1>
+    <form class="form" action="">
+        <fieldset id="user-pass">
+            <legend>User name and Password</legend>
+            <div class="">
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="Email">
+            </div>
+            <div class="">
+                <label for="password">Password</label>
+                <input id="password" type="password" placeholder="password">
+            </div>
+            <div class="">
+                <label for="password1">Confirm Password</label>
+                <input id="password1" type="password" placeholder="password">
+            </div>
+        </fieldset>
+
+        <fieldset id="personal">
+            <legend>Personal information</legend>
+            <div class="">
+                <label for="age">Age</label>
+                <input id="age" type="number" placeholder="Age">
+            </div>
+            <div class="">
+                <p>Your marital status:</p>
+                <div>
+                    <input id="single" type="radio" name="family" value="single" checked>
+                    <label for="single">Single</label>
+                </div>
+                <div>
+                    <input id="married" type="radio" name="family" value="married">
+                    <label for="married">Married</label><br>
+                </div>
+                <div>
+                    <input id="devorced" type="radio" name="family" value="devorced">
+                    <label for="devorced">Devonrced & happy</label><br>
+                </div>
+                <div>
+                    <p>Select your hobies</p>
+                    <select name="hobies" id="" multiple>
+                        <option value="">Sport</option>
+                        <option value="">Music</option>
+                        <option value="">Politics</option>
+                        <option value="">Books</option>
+                        <option value="">Travel</option>
+                        <option value="">Sex</option>
+
+                    </select>
+                </div>
+                <div><input type="hidden" value="W24LCH"></div>
+
+
+
+
+        </fieldset>
+        <fieldset>
+            <div>
+                <label for="file">Upload profile picture</label>
+                <input onchange="previewPic()" type="file" name="profile-pic" id="file" class="btn-3" accept="image/*">
+            </div>
+
+            <img src="no name.jpg" alt="" id="preview">
+            <div>
+                <p>Your comments</p>
+                <textarea rows="5" cols="40">
+                </textarea>
+            </div>
+
+        </fieldset>
+
+<div>
+        <input class="reset" type="reset"  value="Reset"></input>
+</div>
+    </form>
+
+
+
+</body>
+
+</html>
