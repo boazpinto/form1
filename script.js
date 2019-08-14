@@ -4,7 +4,7 @@ function previewPic(){
 }
 function reset(){
 
-    document.getElementById("preview").src="no name.jpg"
+    document.getElementById("preview").src="no name.jpg";
 }
 
 
